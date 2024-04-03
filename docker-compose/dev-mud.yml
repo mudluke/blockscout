@@ -46,6 +46,7 @@ services:
       ETHEREUM_JSONRPC_WS_URL: ws://dev-ws-rpc.metauserdao.com/
       NEXT_PUBLIC_API_PROTOCOL: https
       CHAIN_ID: "168167"
+      FIRST_BLOCK: 1
 
   visualizer:
     extends:
