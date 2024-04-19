@@ -1,4 +1,4 @@
-version: "3.9"
+version: '3.9'
 
 services:
   redis-db:
@@ -30,13 +30,13 @@ services:
       context: ..
       dockerfile: ./docker/Dockerfile
       args:
-        CACHE_EXCHANGE_RATES_PERIOD: ""
-        API_V1_READ_METHODS_DISABLED: "false"
-        DISABLE_WEBAPP: "false"
-        API_V1_WRITE_METHODS_DISABLED: "false"
-        CACHE_TOTAL_GAS_USAGE_COUNTER_ENABLED: ""
-        CACHE_ADDRESS_WITH_BALANCES_UPDATE_INTERVAL: ""
-        ADMIN_PANEL_ENABLED: ""
+        CACHE_EXCHANGE_RATES_PERIOD: ''
+        API_V1_READ_METHODS_DISABLED: 'false'
+        DISABLE_WEBAPP: 'false'
+        API_V1_WRITE_METHODS_DISABLED: 'false'
+        CACHE_TOTAL_GAS_USAGE_COUNTER_ENABLED: ''
+        CACHE_ADDRESS_WITH_BALANCES_UPDATE_INTERVAL: ''
+        ADMIN_PANEL_ENABLED: ''
         RELEASE_VERSION: 6.3.0
     links:
       - db:database
@@ -45,9 +45,9 @@ services:
       ETHEREUM_JSONRPC_TRACE_URL: https://dev-rpc.metauserdao.com/
       ETHEREUM_JSONRPC_WS_URL: ws://dev-ws-rpc.metauserdao.com/
       NEXT_PUBLIC_API_PROTOCOL: https
-      CHAIN_ID: "168167"
+      CHAIN_ID: '168167'
       FIRST_BLOCK: 1
-
+      TRACE_FIRST_BLOCK: 1
   visualizer:
     extends:
       file: ./services/visualizer.yml
