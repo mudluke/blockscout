@@ -65,3 +65,5 @@ dump.rdb
 *.env.example
 *.env.local
 *.env.staging
+
+!/docker-compose/envs/dev-mud-common-frontend.env
