@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  frontend:
+    image: bainwang815/blockscout-frontend:latest
+    pull_policy: always
+    platform: linux/amd64
+    restart: always
+    container_name: "frontend"
+    env_file:
+      - ../envs/testnet-mud-common-frontend.env

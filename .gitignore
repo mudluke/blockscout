@@ -67,3 +67,4 @@ dump.rdb
 *.env.staging
 
 !/docker-compose/envs/dev-mud-common-frontend.env
+!/docker-compose/envs/testnet-mud-common-frontend.env
