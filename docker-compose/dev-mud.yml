@@ -41,10 +41,10 @@ services:
     links:
       - db:database
     environment:
-      ETHEREUM_JSONRPC_HTTP_URL: https://dev-rpc.metauserdao.com/
-      ETHEREUM_JSONRPC_TRACE_URL: https://dev-rpc.metauserdao.com/
-      ETHEREUM_JSONRPC_WS_URL: ws://dev-ws-rpc.metauserdao.com/
-      NEXT_PUBLIC_API_PROTOCOL: https
+      ETHEREUM_JSONRPC_HTTP_URL: http://host.docker.internal:8545/
+      ETHEREUM_JSONRPC_TRACE_URL: http://host.docker.internal:8545/
+      ETHEREUM_JSONRPC_WS_URL: ws://host.docker.internal:8546/
+      NEXT_PUBLIC_API_PROTOCOL: http
       CHAIN_ID: '168167'
       FIRST_BLOCK: 1
       TRACE_FIRST_BLOCK: 1
