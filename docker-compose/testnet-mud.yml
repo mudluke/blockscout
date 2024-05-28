@@ -41,11 +41,11 @@ services:
     links:
       - db:database
     environment:
-      ETHEREUM_JSONRPC_HTTP_URL: https://rpc-testnet.mud-chain.net/
-      ETHEREUM_JSONRPC_TRACE_URL: https://rpc-testnet.mud-chain.net/
-      ETHEREUM_JSONRPC_WS_URL: ws://ws-rpc-testnet.mud-chain.net/
+      ETHEREUM_JSONRPC_HTTP_URL: https://testnet-rpc.mud-chain.net/
+      ETHEREUM_JSONRPC_TRACE_URL: https://testnet-rpc.mud-chain.net/
+      ETHEREUM_JSONRPC_WS_URL: ws://testnet-ws-rpc.mud-chain.net/
       NEXT_PUBLIC_API_PROTOCOL: https
-      CHAIN_ID: '168167'
+      CHAIN_ID: '168169'
       FIRST_BLOCK: 1
       TRACE_FIRST_BLOCK: 1
   visualizer:
